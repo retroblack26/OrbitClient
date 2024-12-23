@@ -22,7 +22,7 @@
 <h3>Steps to Install</h3>
 <ol>
     <li><strong>Clone the repository:</strong>
-        <pre><code>git clone https://github.com/YOUR_USERNAME/OrbitClient.git</code></pre>
+        <pre><code>git clone https://github.com/retroblack26/OrbitClient.git</code></pre>
     </li>
     <li><strong>Navigate to the project directory:</strong>
         <pre><code>cd path/to/OrbitClient</code></pre>
