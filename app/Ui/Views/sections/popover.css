@@ -1,0 +1,32 @@
+#popoverOpener {
+  position: absolute;
+  left: 50%;
+  margin-left: -10vw;
+  text-align: center;
+  top: 45vh;
+  width: 20vw;
+}
+
+.bootstrap .popover {
+  transition: left 400ms ease-out, top 250ms ease-in;
+}
+
+.popover-content > div {
+  text-align: center;
+}
+
+.popover-content > div > a:link {
+  border: 1px solid lavender;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 4px;
+  text-decoration: none;
+  transition: all 250ms;
+}
+
+.popover-content > div > a:hover {
+  background-color: #eeeeff;
+  border-color: #AFAFBF;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #ccc;
+}

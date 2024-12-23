@@ -1,0 +1,129 @@
+<style>
+.pop-comp-wrapper {
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  color:#000;
+  background: transparent;
+  text-align:left;
+  flex-wrap:wrap;
+  z-index:1051!important;
+}
+
+.pop-comp-arrow {
+  position:absolute;
+  z-index:1;
+  width:16px;
+  height:16px;
+  overflow:hidden;
+  pointer-events:none
+}
+
+.pop-comp-arrow::before {
+  content:"";
+  position:absolute;
+  top:8px;
+  left:8px;
+  width:16px;
+  height:16px;
+  background-color: #3191b4;
+  -webkit-transform-origin:left top;
+  transform-origin:left top;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg)
+}
+
+.pop-comp-content {
+  position:relative;
+  z-index:2
+}
+
+.pop-comp-wrapper.position-bottom>.pop-comp-arrow{ 
+  margin-left:-8px;
+  left:0;
+  top:-15px
+}
+
+.pop-comp-wrapper.position-bottom>.pop-comp-arrow::before{
+  box-shadow:0px 0px 2px 0 rgba(0,0,0,.14)
+}
+
+.pop-comp-wrapper.position-top>.pop-comp-arrow{
+  margin-left:-8px;
+  left:0;
+  bottom:-15px
+}
+
+.pop-comp-wrapper.position-right>.pop-comp-arrow{
+  margin-top:-8px;
+  top:0;
+  left:-15px
+}
+
+.pop-comp-wrapper.position-left>.pop-comp-arrow{
+  margin-top:-8px;
+  top:0;
+  right:-15px
+}
+
+.pop-comp-disable-events{pointer-events:none}
+/*!
+ * Clickable list css
+ */
+#list-account {
+  position: sticky;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  overflow: hidden;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  -webkit-overflow-scrolling: touch;
+  clip-path: polygon(5px 0%, 0% 5px, 0% calc(100% - 5px), 5px 100%, calc(100% - 5px) 100%, 100% calc(100% - 5px), 100% 5px, calc(100% - 5px) 0%);
+  background-color: #3191b4;
+}
+
+#list-account::before {
+ content: "";
+ z-index: -1;
+ position: absolute;
+  left: 1px;
+  top: 1px;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  opacity: .8;
+  background: rgba(00, 000, 000, .6);
+  background-size: 10px;
+  clip-path: inherit;
+}
+
+#list-account li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #3191b4;
+  cursor: pointer;
+   color: #E9E2C0;
+  font-weight: 600;
+}
+#list-account li:last-child {
+  border-bottom: none;
+}
+
+
+#list-account li:hover {
+  background-color: #287490;
+}
+</style>
+<!-- content to show as popover -->
+<div id="credential-popover-target">
+  <div class="pop-comp-content">
+    <ul id="list-account">
+    </ul>
+  </div>
+</div>
+
