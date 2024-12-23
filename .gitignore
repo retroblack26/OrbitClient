@@ -9,3 +9,6 @@ node_modules/
 
 # Ignore macOS system files
 .DS_Store
+# Ignore all .DS_Store files
+**/.DS_Store
+
