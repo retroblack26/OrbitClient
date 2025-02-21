@@ -1,6 +1,8 @@
 <h1>🚀 OrbitClient 2.0 Beta (Open Source)</h1>
 <p>OrbitClient is an optimized, fully customizable client for DarkOrbit, now <strong>open-source</strong> and ready for community-driven development!</p>
 
+<h1><a href="#downloads">Go to Downloads</a></h1>
+
 <hr>
 
 <h2>🚀 Features</h2>
@@ -116,7 +118,7 @@ npm run buildWin</code></pre>
 <h2>🧑‍💻 Contribution & Support</h2>
 <p>Contributions welcome! Fork the project and submit a pull request.  
 Join <strong>#⌨coding</strong> on Discord for discussions.</p>
-<p>📥 <strong>Downloads:</strong> 
+<p id="downloads">📥 <strong>Downloads:</strong> 
 <ul>
     <li><a href="https://orbitclient.online/downloads/latest/OrbitClient.dmg" target="_blank">macOS</a></p>
     </li>
